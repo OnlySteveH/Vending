@@ -17,7 +17,6 @@ public class CreditorTest {
         creditor = new Creditor();
     }
 
-
     @Test
     public void addingFundsIncrementsAvailableFunds() throws Exception {
         creditor.addFunds(25);
@@ -42,11 +41,5 @@ public class CreditorTest {
     public void deductingMoreThanBalanceNotAllowed() throws Exception{
         creditor.addFunds(10);
         creditor.deduct(20);
-    }
-
-    @After
-    public void tearDown() throws Exception {
-
-
     }
 }
